@@ -1,4 +1,5 @@
-  public int coinChange(int[] coins, int amount) {
+class Solution{
+public int coinChange(int[] coins, int amount) {
         
         int dp[][]=new int[coins.length][amount+1];
         for(int row[]:dp)
@@ -146,53 +147,4 @@
     }
 
 
-    leetcode contruct binary tree from inorder and postorder using hashmap
-
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
-        HashMap<Integer,Integer> map=new HashMap<>();
-        for(int i=0;i<inorder.length;i++)
-        {
-            map.put(inorder[i],i);
-        }
-        return helper(inorder,postorder,0,inorder.length-1,0,postorder.length-1,map);
-    }
-    public TreeNode helper(int[] inorder,int[] postorder,int instart,int inend,int poststart,int postend,HashMap<Integer,Integer> map)
-    {
-        if(instart>inend || poststart>postend) return null;
-        int val=postorder[postend];
-        int index=map.get(val);
-        int leftsize=index-instart;
-        TreeNode left=helper(inorder,postorder,instart,index-1,poststart,poststart+leftsize-1,map);
-        TreeNode right=helper(inorder,postorder,index+1,inend,poststart+leftsize,postend-1,map);
-        TreeNode root=new TreeNode(val);
-        root.left=left;
-        root.right=right;
-        return root;
-    
-    }
-
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
-        return helper(inorder,postorder,0,inorder.length-1,0,postorder.length-1);
-    }
-    public TreeNode helper(int[] inorder,int[] postorder,int instart,int inend,int poststart,int postend)
-    {
-        if(instart>inend || poststart>postend) return null;
-        int val=postorder[postend];
-        int index=0;
-        for(int i=instart;i<=inend;i++)
-        {
-            if(inorder[i]==val)
-            {
-                index=i;
-                break;
-            }
-        }
-        int leftsize=index-instart;
-        TreeNode left=helper(inorder,postorder,instart,index-1,poststart,poststart+leftsize-1);
-        TreeNode right=helper(inorder,postorder,index+1,inend,poststart+leftsize,postend-1);
-        TreeNode root=new TreeNode(val);
-        root.left=left;
-        root.right=right;
-        return root;
-    
-    }
+}
