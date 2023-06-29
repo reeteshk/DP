@@ -76,6 +76,10 @@
     <td > Unbounded Knapsack </td>
     <td> <a href="https://github.com/reeteshkesarwani/DP/blob/main/DP%20on%20subsequences/Unbounded%20Knapsack.java"> Unbounded Knapsack</a></td>
   </tr>
+  <tr>
+    <td > Target Sum </td>
+    <td> <a href="https://github.com/reeteshkesarwani/DP/blob/main/DP%20on%20subsequences/TargetSum.java"> Target Sum</a></td>
+  </tr>
 <tr>
     <td > Coin Change I </td>
     <td> <a href="https://github.com/reeteshkesarwani/DP/blob/main/DP%20on%20subsequences/coin%20change%20I.java"> Coin Change I</a></td>
