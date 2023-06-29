@@ -54,6 +54,10 @@
     <td > Cherry Pick II </td>
     <td> <a href="https://github.com/reeteshkesarwani/DP/blob/main/Two%20Dimension%20DP/cherry%20pickup%202.java"> Cherry Pick II </a></td>
   </tr>
+   <tr>
+    <td > Ninja Training </td>
+    <td> <a href="https://github.com/reeteshkesarwani/DP/blob/main/Two%20Dimension%20DP/NInja%20Training.java"> Ninja Training </a></td>
+  </tr>
 </table>
 
 <h2>DP on Subsequences</h2>
